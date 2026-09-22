@@ -14,16 +14,16 @@ Pi coding agent 확장. 일부 모델이 파일에 한자/가나를 슬쩍 섞�
 ## 설치
 
 ```bash
-pi install git:github.com/<user>/pi-hanja-guard
+pi install git:github.com/heavyrisem/pi-hanja-guard
 ```
 
 프로젝트 로컬만:
 
 ```bash
-pi install git:github.com/<user>/pi-hanja-guard -l
+pi install git:github.com/heavyrisem/pi-hanja-guard -l
 ```
 
-갱신: `pi update git:github.com/<user>/pi-hanja-guard` (전체는 `pi update --extensions`)
+갱신: `pi update git:github.com/heavyrisem/pi-hanja-guard` (전체는 `pi update --extensions`)
 
 ## 요구 사항
 
