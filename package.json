@@ -1,0 +1,42 @@
+{
+  "name": "pi-hanja-guard",
+  "version": "0.1.0",
+  "description": "Pi coding agent extension: detect stray Han/Kana characters in files the agent just wrote, and make the model fix them before the turn settles.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi",
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "korean",
+    "cjk",
+    "lint"
+  ],
+  "pi": {
+    "extensions": [
+      "./hanja-guard.ts"
+    ]
+  },
+  "files": [
+    "hanja-guard.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "pi:dev": "${PI_BIN:-pi} --no-extensions -e ./hanja-guard.ts",
+    "pi:install-local": "${PI_BIN:-pi} install ./ -l"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.87.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.87.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  }
+}
